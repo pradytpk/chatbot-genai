@@ -14,6 +14,46 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Create a `.env` file in the root directory and add your Pinecone credentials as follows:
+
+```ini
+PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+PINECONE_API_ENV = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+
+### Download the quantize model from the link provided in model folder & keep the model in the model directory:
+
+```ini
 ## Download the Llama 2 Model:
 
-wget  https://huggingface.co-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q4_0.bin?download=true
+llama-2-7b-chat.ggmlv3.q4_0.bin
+
+
+## From the following link:
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+```
+
+```bash
+# run the following command
+python store_index.py
+```
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up localhost:
+```
+
+
+### Techstack Used:
+
+- Python
+- LangChain
+- Flask
+- Meta Llama2
+- Pinecone
