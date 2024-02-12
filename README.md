@@ -1,4 +1,6 @@
-# chatbot-genai
+# Nexgen Rules Chatbot
+
+![alt text](image.png)
 
 ## Steps to run the project 
 
