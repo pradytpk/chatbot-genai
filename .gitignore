@@ -2,10 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+/model
+/data/Medical_book.pdf
 # C extensions
 *.so
-
+/venv
 # Distribution / packaging
 .Python
 build/
