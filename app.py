@@ -27,7 +27,6 @@ index_name="nexrules"
 #Loading the index
 docsearch=PineConeStore.from_existing_index(index_name, embeddings)
 
-
 PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 
 chain_type_kwargs={"prompt": PROMPT}
@@ -36,7 +35,7 @@ llm=CTransformers(
         model="/workspace/chatbot-genai/model/llama-2-7b-chat.ggmlv3.q4_0.bin",
         model_type="llama",
         config={'max_new_tokens':512,
-        'temperature':0.8})
+        'temperature':0.2})
 
 
 qa=RetrievalQA.from_chain_type(
